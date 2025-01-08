@@ -9,7 +9,6 @@
             "email": "letscmsdev@gmail.com"
         }
     ],
-    
     "repositories": [
         {
             "type": "vcs",
@@ -23,6 +22,10 @@
         "psr-4": {
             "Letscms\\ProductAttachment\\": ""
         }
-    }
-   
+    },
+    "require": {
+        "letscms/product-attachment": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
