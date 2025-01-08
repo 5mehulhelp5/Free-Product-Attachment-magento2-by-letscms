@@ -9,9 +9,7 @@
             "email": "letscmsdev@gmail.com"
         }
     ],
-    "require": {
-        "php": "^7.1 || ^8.0",      
-    },
+    
     "repositories": [
         {
             "type": "vcs",
