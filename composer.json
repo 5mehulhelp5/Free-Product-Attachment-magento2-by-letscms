@@ -24,6 +24,5 @@
             "Letscms\\ProductAttachment\\": ""
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+   
 }
