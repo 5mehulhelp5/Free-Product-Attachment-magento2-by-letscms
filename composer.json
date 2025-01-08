@@ -26,6 +26,6 @@
     "require": {
         "letscms/product-attachment": "dev-master"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
