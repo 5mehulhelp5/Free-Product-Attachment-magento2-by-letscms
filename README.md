@@ -1,4 +1,5 @@
 📎 Product Attachment for Magento 2
+
 Overview
 The Product Attachment module for Magento 2 enhances the shopping experience by allowing store administrators to attach files (e.g., PDFs, images, manuals, etc.) to product pages. Customers can easily download these files directly from the product detail page, improving information accessibility and customer satisfaction.
 
