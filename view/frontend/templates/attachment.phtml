@@ -1,0 +1,22 @@
+<?php
+if ($block->getenablestatus()):
+    if ($block->getEnablePageStatus()):
+        $productIds = $block->getProductIdsByOrderId();
+?>
+        <ul>
+            <?php if (!empty($productIds)): ?>
+                <?php foreach ($productIds as $productId): ?>
+                    <?php $attachmentUrl = $block->getAttachmentFileUrl($productId); ?>
+                    <?php if ($attachmentUrl): ?>
+                        <span><img src="<?php echo $this->getViewFileUrl('Letscms_ProductAttachment::images/' . pathinfo($attachmentUrl, PATHINFO_EXTENSION) . ".png"); ?>" style="width:33px;" /> <?= $block->getProductName($productId);    ?> Attachment :</span>
+                        <a href="<?= $attachmentUrl ?>" target="_blank" class="product-attachment-link">
+                            <?= $block->getAttachmentFileName($productId) ?>
+                        </a>
+                        <br>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php endif; ?>
+        </ul>

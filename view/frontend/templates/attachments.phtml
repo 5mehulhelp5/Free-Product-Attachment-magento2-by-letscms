@@ -1,0 +1,17 @@
+<?php
+if ($block->getenablestatus()):
+    if ($block->getEnablePageStatus()):
+        /** @var $block \Letscms\ProductAttachment\Block\Product\Attachment */
+
+        $attachmentUrl = $block->getAttachmentFileUrl();
+
+
+        if ($attachmentUrl): ?>
+            <a href="<?= $attachmentUrl ?>" target="_blank" class="product-attachment-link">
+                <span> <img src="<?php echo $this->getViewFileUrl('Letscms_ProductAttachment::images/' . pathinfo($attachmentUrl, PATHINFO_EXTENSION) . ".png"); ?>" style="width:33px;" /><?= $block->getAttachmentFileName() ?></span>
+            </a>
+        <?php else: ?>
+            <p><?= __('No attachment available for this product.') ?></p>
+        <?php endif; ?>
+    <?php endif; ?>
+<?php endif; ?>

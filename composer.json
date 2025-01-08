@@ -1,0 +1,13 @@
+{
+    "name": "Letscms/ProductAttachment",
+    "description": "Magento 2 module description",
+    "require": {
+        "php": "^7.3 || ^7.4",
+        "magento/framework": ">=100.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Letscms\\Database\\": ""
+        }
+    }
+}

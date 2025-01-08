@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="LetscmsProductAttachment" translate="label" sortOrder="10">
+            <label>Letscms Product Attachment</label>
+        </tab>
+        <section id="ProductAttachment_General" translate="label" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="0">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>LetscmsProductAttachment</tab>
+            <resource>Letscms_ProductAttachment::config</resource>
+            <group id="ProductAttachmentGeneral" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Product Attachment  General</label>
+                <field id="enable_status" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Product Attachment Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                 <field id="Show_On_ProductPage" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Attachment Show on Product View Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="Show_On_OrderPage" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Attachment Show on Order View Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="Tab_title" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Product Attachment Tab Name</label>
+                </field>
+               
+                <!-- <field id="vendor_multiselect" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Allow File Upload Extension</label>
+                    <source_model>Letscms\ProductAttachment\Model\Config\Options</source_model>
+                </field> -->
+                <field id="AllowedExtensions" translate="Module" type="multiselect" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+        <label>Allow File Upload Extension</label>
+        <source_model>Letscms\ProductAttachment\Model\Config\Options</source_model>
+    </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework/Menu/etc/menu.xsd">
+    <menu>
+        <add id="Letscms_ProductAttachment::main_menu" title="Letscms Product Attachments" module="Letscms_ProductAttachment" sortOrder="10" resource="Letscms_ProductAttachment::attachments" parent="Magento_Catalog::catalog"/>
+        <add id="Letscms_ProductAttachment::attachments" title="Product Attachments Configuration" module="Letscms_ProductAttachment" sortOrder="20" action="adminhtml/system_config/edit/section/Letscms_ProductAttachment" parent="Letscms_ProductAttachment::main_menu" resource="Letscms_ProductAttachment::attachments"/>
+    </menu>
+</config>
