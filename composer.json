@@ -23,9 +23,7 @@
             "Letscms\\ProductAttachment\\": ""
         }
     },
-    "require": {
-        "letscms/product-attachment": "dev-master"
-    },
+   
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": false
 }
