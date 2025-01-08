@@ -1,12 +1,12 @@
 {
-    "name": "your-magento-project",
-    "description": "Magento 2 Project with Product Attachment",
-    "type": "project",
+    "name": "letscms/product-attachment",
+    "description": "Magento 2 Product Attachment Module by Letscms",
+    "type": "magento2-module",
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your-email@example.com"
+            "name": "Letscms",
+            "email": "letscmsdev@gmail.com"
         }
     ],
     "require": {
