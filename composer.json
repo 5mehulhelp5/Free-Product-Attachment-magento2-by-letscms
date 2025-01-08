@@ -10,9 +10,7 @@
         }
     ],
     "require": {
-        "php": "^7.1 || ^8.0",
-        "magento/framework": ">=100.0.0",
-        "letscms/product-attachment": "dev-main"
+        "php": "^7.1 || ^8.0",      
     },
     "repositories": [
         {
