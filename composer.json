@@ -2,10 +2,13 @@
   "name": "letscms/productattachment-extension",
   "description": "Magento 2 Product Attachment extension",
   "require": {
-    "php": "^7.1 || ^8.0" 
+    "php": "^7.1 || ^8.0",
+    "letscms/product-attachment": "*"
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "type": "magento2-module",
-  "version": "1.0.0", 
+  "version": "1.0.0",
   "authors": [
     {
       "name": "Letscms",
