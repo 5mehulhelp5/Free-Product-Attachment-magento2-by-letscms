@@ -1,13 +1,22 @@
 {
-    "name": "Letscms/ProductAttachment",
-    "description": "Magento 2 module description",
+    "name": "letscms/product-attachment",
+    "description": "Magento 2 Product Attachment Module by Letscms",
+    "type": "magento2-module",    
+    "authors": [
+        {
+            "name": "Letscms",
+            "email": "letscmsdev@gmail.com"
+        }
+    ],
     "require": {
-        "php": "^7.3 || ^7.4",
-        "magento/framework": ">=100.0.0"
+        "php": "^7.3 || ^7.4",        
     },
     "autoload": {
+        "files": [
+            "registration.php"
+        ],
         "psr-4": {
-            "Letscms\\Database\\": ""
+            "Letscms\\ProductAttachment\\": ""
         }
     }
 }
