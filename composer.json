@@ -22,8 +22,5 @@
         "psr-4": {
             "Letscms\\ProductAttachment\\": ""
         }
-    },
-   
-    "minimum-stability": "stable",
-    "prefer-stable": false
+    }
 }
