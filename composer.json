@@ -1,29 +1,31 @@
 {
-  "name": "letscms/productattachment-extension",
-  "description": "Magento 2 Product Attachment extension",
-  "require": {
-    "php": "^7.1 || ^8.0"    
-  }, 
-   "license": [
-        "OSL-3.0",
-        "AFL-3.0"
+    "name": "letscms/magento-product-attachment",
+    "description": "Magento 2 Product Attachment Module by Letscms",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Letscms",
+            "email": "letscmsdev@gmail.com"
+        }
     ],
-  "type": "magento2-module",
-  "version": "1.0.0",
-  "authors": [
-    {
-      "name": "Letscms",
-      "email": "letscmsdev@gmail.com",
-      "homepage": "https://letscms.com/",
-      "role": "Leader"
-    }
-  ],
-  "autoload": {
-    "files": [
-      "registration.php"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/letscms/Free-Product-Attachment-magento2-by-letscms"
+        }
     ],
-    "psr-4": {
-      "Letscms\\ProductAttachment\\": ""
-    }
-  }
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Letscms\\ProductAttachment\\": ""
+        }
+    },
+    "require": {
+        "letscms/product-attachment": "dev-main"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false
 }
