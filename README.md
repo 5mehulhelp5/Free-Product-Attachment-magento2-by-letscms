@@ -86,8 +86,5 @@ For support or further assistance, please contact letscmsdev@gmail.com.
 
 Feel free to fork this repository, submit issues, or create pull requests. We welcome contributions to improve this module.
 
-📜 License
-
-This module is licensed under the MIT License.
 
 Thank you for using the Product Attachment module for Magento 2! This module is completely free to use and we hope it enhances your store's functionality and user experience. 🌟
