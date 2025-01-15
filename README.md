@@ -1,76 +1,81 @@
+   <h1>Buy Now Button for Magento 2</h1>
 
- Product Attachment for Magento 2
-Overview
-The Product Attachment module for Magento 2 enhances the shopping experience by allowing store administrators to attach files (e.g., PDFs, images, manuals, etc.) to product pages. Customers can easily download these files directly from the product detail page, improving information accessibility and customer satisfaction. 🌟
+  <h2>Overview</h2>
+  <p>The <strong>Buy Now Button</strong> module for Magento 2 enhances the shopping experience by allowing customers to quickly purchase a product with a single click, bypassing the shopping cart. This streamlines the checkout process, making it more efficient and user-friendly, especially for customers who are ready to make an immediate purchase.</p>
 
-Features
-📂 Attach Multiple File Types: Upload a variety of file types such as PDF, DOC, XLS, ZIP, etc., to your products.
-🖥️ Display Attachments on Product Page: Files are displayed on the product detail page under a "Downloads" section for easy access.
-✏️ Customizable Titles & Descriptions: Customize file titles and descriptions for clarity and better customer understanding.
-🔒 Restrict File Downloads: Control who can access specific files by restricting downloads to specific customer groups.
-🛠️ Easy Attachment Management: Manage and upload files through an intuitive interface in the admin panel.
-🌐 3D File Preview: Showcase interactive 3D models (e.g., product prototypes or assembly instructions) directly on the product page for an engaging shopping experience.
-Compatibility
-Magento 2.3.x
-Magento 2.4.x
-Installation
-📦 Installation via Composer (Recommended)
-Install the module via Composer:
+  <div class="section-header">🌟 Key Features</div>
+  <ul class="features">
+    <li><strong>🛒 Instant Purchase</strong>: Adds a "Buy Now" button on product pages for immediate checkout.</li>
+    <li><strong>🚀 Simplified Checkout</strong>: Directs customers to the checkout page without needing to go through the cart, speeding up the purchase process.</li>
+    <li><strong>🛍️ Customizable Button</strong>: Easily customize the button text and appearance to match your store’s theme.</li>
+    <li><strong>🔒 Optional Cart Bypass</strong>: Optionally bypass the cart page for a more direct path to checkout.</li>
+    <li><strong>🎨 Configurable Display</strong>: Display the button based on specific product types or customer groups.</li>
+  </ul>
 
-bash
-Copy code
-composer require letscms/product-attachment
-Enable the Module:
+  <div class="section-header">Compatibility</div>
+  <ul>
+    <li>Magento 2.3.x</li>
+    <li>Magento 2.4.x</li>
+  </ul>
 
-bash
-Copy code
-bin/magento module:enable Letscms_ProductAttachment
-Upgrade the Database:
+  <div class="section-header">Installation</div>
 
-bash
-Copy code
-bin/magento setup:upgrade
-Compile and Deploy Static Content:
+  <h3>📦 Installation via Composer (Recommended)</h3>
+  <p>Install the module via Composer:</p>
+  <pre><code>composer require letscms/buy-now-button</code></pre>
 
-bash
-Copy code
-bin/magento setup:di:compile
-bin/magento setup:static-content:deploy -f
-Flush Cache:
+  <p>Enable the Module:</p>
+  <pre><code>bin/magento module:enable Letscms_BuyNowButton</code></pre>
 
-bash
-Copy code
-bin/magento cache:flush
-🔧 Manual Installation
-Download the Module from the repository.
-Extract and Copy Files to app/code/Letscms/ProductAttachment.
-Enable the Module:
-bash
-Copy code
-bin/magento module:enable Letscms_ProductAttachment
-Follow the same steps for upgrading the database, compiling, deploying static content, and clearing the cache as above.
-Configuration
-🔑 Login to Magento Admin Panel.
-⚙️ Navigate to Configuration: Stores > Configuration > Letscms > Product Attachment.
-Configure Settings:
-✅ Enable/Disable the module.
-📄 Set allowed file types (e.g., PDF, DOCX, PNG).
-🔤 Customize the display title for the attachments section.
-📝 Add a description for better file understanding.
-Usage
-🛠️ Edit Product:
+  <p>Upgrade the Database:</p>
+  <pre><code>bin/magento setup:upgrade</code></pre>
 
-Go to Products in the Admin Panel and edit an existing product or create a new one.
-📤 Upload Attachments:
+  <p>Compile and Deploy Static Content:</p>
+  <pre><code>bin/magento setup:di:compile
+bin/magento setup:static-content:deploy -f</code></pre>
 
-Find the Product Attachments tab under the product details page.
-Click on Add Attachment and upload your files.
-Add a title and description for each file.
-💾 Save the Product:
+  <p>Flush Cache:</p>
+  <pre><code>bin/magento cache:flush</code></pre>
 
-After saving the product, the attachments will be displayed in the Downloads section on the product detail page.
-📐 3D Preview Setup
-File Compatibility: Ensure the uploaded file is in a compatible format (e.g., .glb, .gltf).
-🖼️ Configure 3D Viewer Settings:
-Go to Stores > Configuration > Letscms > Product Attachment.
-Adjust settings for displaying 3D models interactively on the product page.
+  <h3>🔧 Manual Installation</h3>
+  <ol>
+    <li>Download the Module from the repository.</li>
+    <li>Extract and Copy Files to <code>app/code/Letscms/BuyNowButton</code>.</li>
+    <li>Enable the Module:
+      <pre><code>bin/magento module:enable Letscms_BuyNowButton</code></pre>
+    </li>
+    <li>Follow the same steps for upgrading the database, compiling, deploying static content, and clearing the cache as above.</li>
+  </ol>
+
+  <div class="section-header">Configuration</div>
+
+  <h3>🔑 Configure the Module</h3>
+  <ol>
+    <li>Login to Magento Admin Panel.</li>
+    <li>Navigate to Configuration: <code>Stores > Configuration > Letscms > Buy Now Button</code>.</li>
+    <li>Configure the following settings:
+      <ul>
+        <li>✅ <strong>Enable/Disable the module</strong>.</li>
+        <li>🖱️ <strong>Button Text:</strong> Set custom text for the "Buy Now" button.</li>
+        <li>💼 <strong>Show Button on Product Page:</strong> Choose where to display the button (e.g., product pages, specific categories).</li>
+        <li>🎨 <strong>Customize Button Appearance:</strong> Set the style, color, and size of the button.</li>
+        <li>🔒 <strong>Restrict to Customer Groups:</strong> Optionally, restrict button visibility to certain customer groups.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <div class="section-header">Usage</div>
+
+  <h3>🛠️ Add the Buy Now Button</h3>
+  <ol>
+    <li>Go to <strong>Products</strong> in the Admin Panel and edit an existing product or create a new one.</li>
+    <li>In the product configuration, find the <strong>Buy Now Button</strong> section.</li>
+    <li><strong>Enable the Button</strong> for this product and customize the display options if needed.</li>
+    <li>Save the Product.</li>
+  </ol>
+
+  <h3>🛍️ Customer Experience</h3>
+  <ul>
+    <li>The <strong>Buy Now</strong> button will now appear on the product page.</li>
+    <li>Customers can click the button to bypass the cart and go directly to the checkout page for an immediate purchase.</li>
+  </ul>
