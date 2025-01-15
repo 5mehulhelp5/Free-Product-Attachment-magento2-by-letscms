@@ -1,81 +1,179 @@
-   <h1>Buy Now Button for Magento 2</h1>
+📎 Product Attachment for Magento 2
 
-  <h2>Overview</h2>
-  <p>The <strong>Buy Now Button</strong> module for Magento 2 enhances the shopping experience by allowing customers to quickly purchase a product with a single click, bypassing the shopping cart. This streamlines the checkout process, making it more efficient and user-friendly, especially for customers who are ready to make an immediate purchase.</p>
+Overview
 
-  <div class="section-header">🌟 Key Features</div>
-  <ul class="features">
-    <li><strong>🛒 Instant Purchase</strong>: Adds a "Buy Now" button on product pages for immediate checkout.</li>
-    <li><strong>🚀 Simplified Checkout</strong>: Directs customers to the checkout page without needing to go through the cart, speeding up the purchase process.</li>
-    <li><strong>🛍️ Customizable Button</strong>: Easily customize the button text and appearance to match your store’s theme.</li>
-    <li><strong>🔒 Optional Cart Bypass</strong>: Optionally bypass the cart page for a more direct path to checkout.</li>
-    <li><strong>🎨 Configurable Display</strong>: Display the button based on specific product types or customer groups.</li>
-  </ul>
+The Product Attachment module for Magento 2 allows store administrators to attach files (e.g., PDFs, images, manuals, etc.) to products. These files are displayed on the product detail page for customers to download, improving the overall shopping experience and providing valuable information about the products.
+The Product Attachment module for Magento 2 enhances the shopping experience by allowing store administrators to attach files (e.g., PDFs, images, manuals, etc.) to product pages. Customers can easily download these files directly from the product detail page, improving information accessibility and customer satisfaction.
 
-  <div class="section-header">Compatibility</div>
-  <ul>
-    <li>Magento 2.3.x</li>
-    <li>Magento 2.4.x</li>
-  </ul>
+🚀 Features
 
-  <div class="section-header">Installation</div>
+📂 Attach multiple file types (PDF, DOC, XLS, ZIP, etc.) to products.
 
-  <h3>📦 Installation via Composer (Recommended)</h3>
-  <p>Install the module via Composer:</p>
-  <pre><code>composer require letscms/buy-now-button</code></pre>
+🖥️ Display file attachments on the product detail page.
 
-  <p>Enable the Module:</p>
-  <pre><code>bin/magento module:enable Letscms_BuyNowButton</code></pre>
+✏️ Customizable file titles and descriptions.
 
-  <p>Upgrade the Database:</p>
-  <pre><code>bin/magento setup:upgrade</code></pre>
+🔒 Restrict file downloads to specific customer groups.
 
-  <p>Compile and Deploy Static Content:</p>
-  <pre><code>bin/magento setup:di:compile
-bin/magento setup:static-content:deploy -f</code></pre>
+🛠️ Easy management of attachments in the admin panel.
 
-  <p>Flush Cache:</p>
-  <pre><code>bin/magento cache:flush</code></pre>
+🌐 3D File Preview: Showcase 3D models (e.g., product prototypes, assembly instructions) directly on the product page for a more engaging user experience.
 
-  <h3>🔧 Manual Installation</h3>
-  <ol>
-    <li>Download the Module from the repository.</li>
-    <li>Extract and Copy Files to <code>app/code/Letscms/BuyNowButton</code>.</li>
-    <li>Enable the Module:
-      <pre><code>bin/magento module:enable Letscms_BuyNowButton</code></pre>
-    </li>
-    <li>Follow the same steps for upgrading the database, compiling, deploying static content, and clearing the cache as above.</li>
-  </ol>
+📂 Attach Multiple File Types: Upload a variety of file types such as PDF, DOC, XLS, ZIP, etc., to your products.
+🖥️ Display Attachments on Product Page: Files are displayed on the product detail page under a "Downloads" section for easy access.
+✏️ Customizable Titles and Descriptions: Customize file titles and descriptions for clarity and better customer understanding.
+🔒 Restrict File Downloads: Control who can access specific files by restricting downloads to specific customer groups.
+🛠️ Easy Attachment Management: Manage and upload files through an intuitive interface in the admin panel.
+🌐 3D File Preview: Showcase interactive 3D models (e.g., product prototypes or assembly instructions) directly on the product page for an engaging shopping experience.
+🖥️ Compatibility
 
-  <div class="section-header">Configuration</div>
+Magento 2.3.x, 2.4.x
 
-  <h3>🔑 Configure the Module</h3>
-  <ol>
-    <li>Login to Magento Admin Panel.</li>
-    <li>Navigate to Configuration: <code>Stores > Configuration > Letscms > Buy Now Button</code>.</li>
-    <li>Configure the following settings:
-      <ul>
-        <li>✅ <strong>Enable/Disable the module</strong>.</li>
-        <li>🖱️ <strong>Button Text:</strong> Set custom text for the "Buy Now" button.</li>
-        <li>💼 <strong>Show Button on Product Page:</strong> Choose where to display the button (e.g., product pages, specific categories).</li>
-        <li>🎨 <strong>Customize Button Appearance:</strong> Set the style, color, and size of the button.</li>
-        <li>🔒 <strong>Restrict to Customer Groups:</strong> Optionally, restrict button visibility to certain customer groups.</li>
-      </ul>
-    </li>
-  </ol>
+Magento 2.3.x
+Magento 2.4.x
+⚙️ Installation
 
-  <div class="section-header">Usage</div>
+1. Manual Installation
 
-  <h3>🛠️ Add the Buy Now Button</h3>
-  <ol>
-    <li>Go to <strong>Products</strong> in the Admin Panel and edit an existing product or create a new one.</li>
-    <li>In the product configuration, find the <strong>Buy Now Button</strong> section.</li>
-    <li><strong>Enable the Button</strong> for this product and customize the display options if needed.</li>
-    <li>Save the Product.</li>
-  </ol>
+Download the module from the repository.
 
-  <h3>🛍️ Customer Experience</h3>
-  <ul>
-    <li>The <strong>Buy Now</strong> button will now appear on the product page.</li>
-    <li>Customers can click the button to bypass the cart and go directly to the checkout page for an immediate purchase.</li>
-  </ul>
+Extract the downloaded files and copy them to the app/code/Letscms/ProductAttachment directory.
+
+Run the following commands from the Magento 2 root:
+
+📦 Installation via Composer (Recommended)
+Install via Composer
+Run the following command to install the module:
+
+bash
+Copy code
+composer require letscms/product-attachment
+Enable the Module
+Once installed, enable the module by running:
+
+bash
+Copy code
+bin/magento module:enable Letscms_ProductAttachment
+Upgrade the Database
+Upgrade the database schema with:
+
+bash
+Copy code
+bin/magento setup:upgrade
+Compile and Deploy Static Content
+Run these commands to compile and deploy static content:
+
+bash
+Copy code
+bin/magento setup:di:compile
+bin/magento setup:static-content:deploy -f
+bin/magento cache:flush
+Flush Cache
+Clear Magento cache:
+
+🔧 Configuration
+bash
+Copy code
+bin/magento cache:flush
+🔧 Manual Installation
+If you prefer manual installation, follow these steps:
+
+Log in to the Magento Admin Panel.
+Download the Module
+Download the module package from the repository.
+
+Navigate to Stores > Configuration > Letscms > Product Attachment.
+Extract and Copy Files
+Extract the downloaded files and copy them to the app/code/Letscms/ProductAttachment directory.
+
+Configure the settings as required:
+Enable the Module
+Run the following command:
+
+✅ Enable/Disable the module.
+bash
+Copy code
+bin/magento module:enable Letscms_ProductAttachment
+Run Setup Commands
+Upgrade the database, compile, deploy static content, and flush the cache using the same steps mentioned above.
+
+📄 Set allowed file types.
+🔧 Configuration
+Log into Magento Admin Panel
+Navigate to your Magento Admin Panel.
+
+🔤 Customize the file display section title.
+Navigate to Settings
+Go to Stores > Configuration > Letscms > Product Attachment.
+
+📝 Usage
+Configure Settings
+Adjust the following settings as needed:
+
+Go to the Products section in the admin panel and edit a product.
+✅ Enable/Disable Module
+📄 Set Allowed File Types (e.g., PDF, DOCX, PNG, etc.)
+🔤 Customize Display Title for attachments section.
+📝 Set Description to provide more details on file contents.
+🛠️ Usage
+Edit Product
+Go to Products in the Admin panel and edit an existing product or create a new one.
+
+Find the "Product Attachments" tab under the product edit page.
+Upload Attachments
+Find the Product Attachments tab under the product details page.
+
+Click "Add Attachment" to upload files.
+Add Attachments
+Click on Add Attachment, upload your files, and add a title and description for each file.
+
+Enter a title and description for each attachment.
+Save the Product
+Save the product. The attachments will now be displayed on the product detail page under the "Downloads" section.
+
+Save the product.
+📐 3D Preview Setup
+To enable 3D previews:
+
+The attachments will now be displayed on the product detail page under the "Downloads" or similar section.
+Ensure that the uploaded file is in a compatible format (e.g., .glb, .gltf).
+Go to Stores > Configuration > Letscms > Product Attachment.
+Configure the 3D viewer settings for displaying interactive 3D models.
+📸 Screenshots
+Here are some visuals to guide you through the process:
+
+To enable 3D previews, ensure the uploaded file is in a compatible format (e.g., .glb, .gltf) and configure the 3D viewer under Stores > Configuration > Letscms > Product Attachment.
+1. Admin Panel Settings
+A look at the configuration settings in the admin panel.
+
+📸 Screenshots
+
+Include screenshots here to showcase:
+2. Product Attachment Upload Interface
+Upload files to your product through the product edit page.
+
+Admin panel settings
+
+Product attachment upload interface
+3. Frontend Display
+The frontend of the product page showcasing the "Downloads" section and 3D preview.
+
+Frontend display of attachments, including 3D previews
+
+💬 Support
+If you need further assistance or encounter issues, feel free to reach out to us at:
+
+For support or further assistance, please contact letscmsdev@gmail.com.
+📧 Email: letscmsdev@gmail.com
+
+🤝 Contribution
+We welcome contributions! Feel free to:
+
+Feel free to fork this repository, submit issues, or create pull requests. We welcome contributions to improve this module.
+
+
+Thank you for using the Product Attachment module for Magento 2! This module is completely free to use and we hope it enhances your store's functionality and user experience. 🌟
+Fork the repository.
+Submit issues or feature requests.
+Create pull requests to improve the module.
+Thank you for using the Product Attachment module for Magento 2! We hope it enhances your store’s functionality and user experience. 🌟
